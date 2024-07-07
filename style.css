@@ -1,0 +1,124 @@
+h3 {
+    font-size: 2.5rem;
+}
+
+p, li {
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: black;
+}
+
+#introduction {
+    font-family: 'Baskervville SC', sans-serif;
+    background: linear-gradient(#5E56a9, #8856A9);
+    padding: 5px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    block-size: 100%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.information {
+    font-family: 'Lora', sans;
+    gap: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#name {
+    color: white;
+    grid-column: 1;
+}
+
+#web-development {
+    width: 35%;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 50%;
+    block-size: 50%;
+    justify-content: space-evenly;
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+}
+
+#about-me > img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#additional-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-evenly;
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+}
+
+#additional-info, #about-me {
+    background-color: #5677A9;
+}
+
+#contact-info {
+    background: linear-gradient(#5E56a9, #8856A9);
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .information, .container {
+        flex-direction: column;
+    }
+
+    #about-me, #additional-info {
+        width: fit-content;
+        padding: 5px;
+    }
+
+    #introduction {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #web-development {
+        width: 75%;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    #contact-info {
+        block-size: 100%;
+        width: auto;
+    }
+
+}
