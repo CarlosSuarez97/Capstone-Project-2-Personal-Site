@@ -8,6 +8,7 @@ p, li {
 
 body {
     background-color: black;
+    padding: 20px;
 }
 
 #introduction {
@@ -16,7 +17,7 @@ body {
     padding: 5px;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     block-size: 100%;
@@ -26,10 +27,10 @@ body {
 
 .information {
     font-family: 'Lora', sans;
-    gap: 5px;
+    gap: 20px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -100,12 +101,14 @@ body {
     #about-me, #additional-info {
         width: fit-content;
         padding: 5px;
+        margin-bottom: 10px;
     }
 
     #introduction {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10px;
     }
 
     #web-development {
@@ -119,6 +122,10 @@ body {
     #contact-info {
         block-size: 100%;
         width: auto;
+    }
+
+    body {
+        padding: 5px;
     }
 
 }
